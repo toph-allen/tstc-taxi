@@ -33,6 +33,8 @@ cd ..
 
 We only use the second half of 2017 because at the start of that year, TNCs didn't report the location of their pick-ups and drop-offs. The script `data-raw/plot_tnc_pudo_reporting.R` will plot this data, using downloading the requisite data files at runtime using `read_csv()`. Be warned, these are large files, so this script is fairly RAM-heavy and takes a while to run. It's not required to do the full analysis.
 
+![Plot of TNC Pudo Reporting](figures/tnc_pudo_reporting.png)
+
 ### Processing Taxi Data
 
 The three scripts `process_fhv_tripdata.R`, `process_yellow_tripdata.R`, and `process_green_tripdata.R` each process the respective tripdata files for that type of car service.
