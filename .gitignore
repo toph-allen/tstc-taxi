@@ -7,3 +7,4 @@
 /data-raw/*
 !/data-raw/*.R
 !/data-raw/*.txt
+!/data-raw/*.sh
