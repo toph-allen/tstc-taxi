@@ -49,4 +49,6 @@ The script `load_census_data.R` downloads and processes the census data used in 
 
 N.B. To run this script, you must first [sign up for a US census API key](https://api.census.gov/data/key_signup.html). When you receive the key, put it in a file named `census_api_key` in the `data-raw` directory.
 
-TODO: Finish write-up.
+TODO:
+- Finish write-up.
+- Clean up `load_census_data.R`
