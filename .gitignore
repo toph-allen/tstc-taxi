@@ -3,6 +3,7 @@
 .RData
 .Ruserdata
 
-# Ignore CSV and zip files in data-raw
-*.zip
-*.csv
+# Ignore raw data except for scripts and text files
+/data-raw/*
+!/data-raw/*.R
+!/data-raw/*.txt
