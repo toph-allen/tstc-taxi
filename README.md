@@ -4,6 +4,8 @@ This repository is a visualization of the income distribution the areas served b
 
 The repo contains the code required to download and process the raw data, interstitial .RData files produced by the raw data processing, scripts to produce plots of car service income distributions, and the resulting plots.
 
+![Income Distribution in Taxi Zones Served by Car Services in NYC in Q3-Q4 2017 (Pick-ups and Drop-offs)"](figures/pudo_relative_income_dist_1_new_cats.png)
+
 ## Directory Structure
 
 The code is in R. This repo doesn't currently conform to the R package standard. The directory structure is as follows:
@@ -33,7 +35,7 @@ cd ..
 
 We only use the second half of 2017 because at the start of that year, TNCs didn't report the location of their pick-ups and drop-offs. The script `data-raw/plot_tnc_pudo_reporting.R` will plot this data, using downloading the requisite data files at runtime using `read_csv()`. Be warned, these are large files, so this script is fairly RAM-heavy and takes a while to run. It's not required to do the full analysis.
 
-![Plot of TNC Pudo Reporting](figures/tnc_pudo_reporting.png)
+![Proportion of TNC pick-ups and drop-offs with missing data](figures/tnc_pudo_reporting.png)
 
 ### Processing Taxi Data
 

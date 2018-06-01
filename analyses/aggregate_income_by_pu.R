@@ -145,7 +145,7 @@ pu_income_dist2 <- bind_rows(list(green_dist, yellow_dist, tnc_dist)) %>%
 ggplot(pu_income_dist2) +
   geom_col(aes(x = category, y = pu_income_dist, fill = taxi),
            position = "dodge") +
-  labs(x = "Income Category (ACS 2016 Data)",
+  labs(x = "Income Category (Aggregated ACS 2016 Data)",
        y = "Number of Trips per Income Category Share",
        title = "Aggregated Income Distributions for Pick-ups\nMade by Car Services in NYC in Q3-Q4 2017") +
   scale_y_continuous(labels = comma) +
@@ -155,7 +155,7 @@ ggsave(here("figures", "pu_income_dist_new_cats.png"), width = 6.5, height = 5)
 ggplot(pu_income_dist2) +
   geom_col(aes(x = category, y = proportion, fill = taxi),
            position = "dodge") +
-  labs(x = "Income Category (ACS 2016 Data)",
+  labs(x = "Income Category (Aggregated ACS 2016 Data)",
        y = "Proportion of Pick-ups",
        title = "Income Distribution of Pick-up Taxi Zones Served by\nCar Services in NYC in Q3-Q4 2017 (Pick-ups Only)") +
   scale_y_continuous(labels = comma) +
@@ -164,7 +164,7 @@ ggsave(here("figures", "pu_relative_income_dist_1_new_cats.png"), width = 6.5, h
 
 ggplot(pu_income_dist2) +
   geom_path(aes(x = category, y = proportion, color = taxi, group = taxi)) +
-  labs(x = "Income Category (ACS 2016 Data)",
+  labs(x = "Income Category (Aggregated ACS 2016 Data)",
        y = "Proportion of Pick-ups",
        title = "Income Distribution of Pick-up Taxi Zones Served by\nCar Services in NYC in Q3-Q4 2017 (Pick-ups Only)") +
   scale_y_continuous(labels = comma) +
