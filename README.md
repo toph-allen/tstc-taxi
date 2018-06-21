@@ -2,7 +2,7 @@
 
 This repository is a visualization of the income distribution the areas served by different types of car services in New York City.
 
-The repo contains the code required to download and process the raw data, interstitial .RData files produced by the raw data processing, scripts to produce plots of car service income distributions, and the resulting plots.
+The repo contains the code required to download and process the raw data and produce plots of car service income distributions. It also contains, interstitial .RData files produced by the raw data processing.
 
 ![Income Distribution in Taxi Zones Served by Car Services in NYC in Q3-Q4 2017 (Pick-ups and Drop-offs)"](figures/pudo_relative_income_dist_1_new_cats.png)
 
@@ -48,9 +48,9 @@ We only use the second half of 2017 because at the start of that year, TNCs didn
 
 ### Processing Taxi Data
 
-The three scripts `process_fhv_tripdata.R`, `process_yellow_tripdata.R`, and `process_green_tripdata.R` each process the respective tripdata files for that type of car service.
+The three scripts — `process_fhv_tripdata.R`, `process_yellow_tripdata.R`, and `process_green_tripdata.R` — each process the respective tripdata files for that type of car service.
 
-All of these scripts read the tripdata files, and aggregate pick-ups only (PUs), drop-offs only (DOs), and pick-ups and drop-offs combined (PUDOs) by taxi zone, saving a data file with four columns: one for taxi zone, and one for each type of aggregation. (The interstitial data files are saved as .RData files containing tibbles in the `data` directory.)
+All of these scripts read the tripdata files, and aggregate pick-ups only (PUs), drop-offs only (DOs), and pick-ups and drop-offs combined (PUDOs) by taxi zone, and save a data file with four columns: one for taxi zone, and one for each type of aggregation. (The interstitial data files are saved as .RData files containing tibbles in the `data` directory.)
 
 Green and yellow cab data are processed identically. FHV data are first filtered by the taxi base of the car making the trip to separate TNCs and other FHVs. We save the other FHV data, but don't use it later on.
 
